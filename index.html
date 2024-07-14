@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fyle Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container custom-container mx-auto">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h1 style="color: rgb(241, 13, 89);">Award Winning</h1>
+            <h1>Digital Marketing Agency</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi culpa nihil voluptatem sequi repellat velit nisi eaque dignissimos quae? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn custom-button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+        </div>
+        <div class="col-md-6">
+          <img src="photo.webp" class="img-fluid" alt="Photo">
+        </div>
+      </div>
+    </div>
+
+    <div class="container custom-container mx-auto">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h1 style="color: rgb(241, 13, 89);">What We Do</h1>
+            <h1>Service Provide for You</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error illum, corrupti dolores vitae corporis natus repudiandae, ipsum pariatur in blanditiis dolorem ab non quasi vel nulla ut voluptatum doloribus nesciunt?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container custom-container mx-auto">
+      <div class="row" id="dynamic-images">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="mar1.webp" class="card-img-top img-fluid" alt="mar1">
+            <div class="card-overlay">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+              <button class="btn custom-button">Read More →</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="mar2.webp" class="card-img-top img-fluid" alt="mar2">
+            <div class="card-overlay">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+              <button class="btn custom-button">Read More →</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="mar3.webp" class="card-img-top img-fluid" alt="mar3">
+            <div class="card-overlay">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+              <button class="btn custom-button">Read More →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div class="container custom-container mx-auto">
+      <div class="row text-center">
+        <h1>OUR PROJECT</h1>
+        <h2 class="bold-text">Why we are Best</h2>
+        <div class="col-md-6">
+          <img id="project-image" src="mar1.webp" class="img-fluid" alt="Project Image">
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group" id="project-list">
+            <li class="list-group-item" onclick="changeProjectImage('mar1.webp')">Genderless Kei - Japan
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam tempora ea odio consectetur animi possimus doloremque mollitia consequatur fugit!</p>
+            </li>
+            <li class="list-group-item" onclick="changeProjectImage('mar2.webp')">Management and Strategy
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati optio vero rerum corporis velit unde voluptatum quos adipisci laudantium repellendus.</p>
+            </li>
+            <li class="list-group-item" onclick="changeProjectImage('mar4.webp')">Security
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum accusantium, accusamus odit illo quos ipsam harum doloribus cum in</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container custom-container mx-auto">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="expert-growth">
+            <h1 style="color: rgb(206, 13, 46);">Experts Growth</h1>
+            <h2 class="bold-text">Our Company Growth</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="symbol heart">❤️</div>
+              <h5 class="card-title">Satisfied Customers</h5>
+              <p class="card-text">199+</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="symbol clock">⏰</div>
+              <h5 class="card-title">Days of Operation</h5>
+              <p class="card-text">1591+</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="symbol check">✔️</div>
+              <h5 class="card-title">Complete Projects</h5>
+              <p class="card-text">283+</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="symbol trophy">🏆</div>
+              <h5 class="card-title">Win Awards</h5>
+              <p class="card-text">75+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Talk to Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://getform.io/f/akkgynea" method="POST">
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="name" id="firstName" required>
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="message" id="lastName" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" name="subscribe" value="yes" checked>
+                <label class="form-check-label" for="agreeCheck">I agree to the terms and conditions of the Fyle website.</label>
+              </div>
+              <button type="submit" class="btn btn-pink btn-block" style="width: 450px;">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const images = ['mar1.webp', 'mar2.webp', 'mar3.webp', 'mar4.webp', 'mar5.webp'];
+      let currentIndex = 0;
+      const dots = document.querySelectorAll('.dot');
+
+      function updateImages() {
+        const imageContainers = document.querySelectorAll('#dynamic-images .card-img-top');
+        currentIndex = (currentIndex + 1) % images.length;
+        for (let i = 0; i < imageContainers.length; i++) {
+          imageContainers[i].src = images[(currentIndex + i) % images.length];
+        }
+        updateDots();
+      }
+
+      function updateDots() {
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      setInterval(updateImages, 2000);
+
+      function changeProjectImage(imageSrc) {
+        document.getElementById('project-image').src = imageSrc;
+        const projectItems = document.querySelectorAll('.list-group-item');
+        projectItems.forEach(item => item.classList.remove('active-project'));
+        event.currentTarget.classList.add('active-project');
+      }
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
